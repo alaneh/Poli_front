@@ -172,3 +172,14 @@ a:-webkit-any-link {
         font-size: 14px;
     }
 }
+
+.img {
+    width: 50px;
+    margin: 0px 15px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
