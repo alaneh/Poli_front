@@ -239,13 +239,6 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 5px;
 }
 
-.btn:hover,
-.btn:hover>.sub {
-    color: white;
-    background-color: #74003e;
-    text-align: center;
-}
-
 @media only screen and (max-width: 1400px) {
     header {
         height: 47px;
