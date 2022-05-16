@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/inicio.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <script>
+        function verpas() {
+            var x = document.getElementById("pass");
+            var img = document.getElementById("icon");
+            if (x.type === "password") {
+                x.type = "text";
+                img.src = "img/ver (1).png"
+
+            } else {
+                x.type = "password";
+                img.src = "img/ver.png"
+            }
+        }
+    </script>
+    <div class="alinear">
+        <div class="inicio">
+            <center><img class="poliasesor" src="img/Poliasesor.png">
+                <form name="formulario" method="post" onsubmit="return submitUserForm();" action="InicioSesion">
+                    <input type="text" name="usu" id="usu" autocomplete="off" maxlength="12" placeholder="Usuario" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                    <br>
+
+                    <br>
+                    <div>
+                        <input type="password" id="pass" placeholder="Contraseña" maxlength="15" name="cont" autocomplete="off" required onkeypress="return (event.charCode !== 60 && event.charCode !== 62)">
+
+                        <img id="icon" src="img/ver.png" onclick="verpas()">
+                        <br>
+                        <a href="olvdcontrasena.html" class="contra">Olvide mi contraseña</a></div>
+                    <br>
+                    <div class="g-recaptcha" name="captcha" data-sitekey="6LebTMUcAAAAACL1I8MxkfYOuHisI1-XwqQPg8k7"></div>
+                    <br>
+                    <a href="index.html"><input type="button" value="Cancelar" class="button"></a>
+                    <input type="submit" id="ini" value="Iniciar Sesion" class="button">
+                    <br>
+                    <br>
+                </form>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

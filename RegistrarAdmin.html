@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/xxx.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal1.css">
+    <link rel="stylesheet" href="./css/paginaPrincipal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Registrar Administrador</title>
+    <script src="https://kit.fontawesome.com/579fe2a44d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="primera seccion">
+            <figure class="logo-ipn">
+                <a href="https://www.ipn.mx"><img src="img/logo.png"></a>
+            </figure>
+            <!--formulario con filtros empieza-->
+            <form action="" method="post" target="">
+                <div class="buscador-personas seccion">
+                    <input type="search" placeholder="Buscar">
+                    <a id="btn-filtros" class="btn-filtros"><i class="bi bi-funnel"></i></a>
+                </div>
+                <div class="filtros" id="filtros">
+                    <p>Aplicar filtro</p>
+                    <hr/>
+                    <section>
+                        <div class="primera-columna">
+                            <label><input type="radio" name="filtros" value="asesoria"> Buscar asesoría</label>
+                            <label><input type="radio" name="filtros" value="asesor"> Buscar asesor</label>
+                            <label><input type="radio" name="filtros" value="horario"> Buscar horario</label>
+                        </div>
+                        <div class="segunda-columna">
+                            <label><input type="radio" name="filtros" value="calificacion"> Buscar calificación de asesor</label>
+                            <label><input type="radio" name="filtros" value="unidadAp"> Buscar unidad de aprendizaje</label>
+                            <div>
+                                <input type="submit" value="Ok" class="btn">
+                                <input type="reset" value="Borrar selección" class="btn">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </form>
+            <!--formulario con filtros termina-->
+        </div>
+        <div class="segunda seccion">
+            <figure class="logo-poliasesor">
+                <img src="img/3 (2).png">
+            </figure>
+        </div>
+        <div class="tercera seccion">
+            <div class="botones">
+                <a href="#"><i class="fa-solid fa-users"></i></i></a>
+                <a href="#"><i class="fa-solid fa-users-line"></i></a>
+                <a href="#"><i class="fa-solid fa-users-slash"></i></a>
+                <a href="#"><i class="fa-solid fa-notebook"></i></a>
+                <a href="#"><i class="fa-solid fa-user-plus"></i></i></a>
+                <a href="#"><i class="bi bi-person-circle"></i></a>
+                <div class="desplegable">
+                    <p class="btnBoleta">2020090654</p>
+                    <div class="lista-sesion" id="lista-sesion">
+                        <a href="#">Mi Perfil</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/paginaPrincipal.js"></script>
+    <br>
+    <div class="center">
+        <br><br>
+        <h1>
+            Registrar Administrador
+        </h1>
+
+        <form action="guardarAdmin" autocomplete="off" method="POST">
+
+            <input type="file" name="imgUsu" style="border: 2px solid #74003E; background: #74003E; border-radius: 20px; visibility: hidden">
+            <br>
+            <br>
+            <label> Boleta: </label>
+            <input type="text" maxlength="11ch" id="boletaUsu" required="" name="bol_usu" class="in">
+            <br>
+            <br>
+
+            <label> Nombre(s):</label>
+            <input type="text" required="" id="nomUsuario" name="nomUsuario" class="in">
+            <br>
+            <br>
+            <label> Apellidos:</label>
+            <input type="text" required="" id="apeUsuario" name="apeUsuario" class="in">
+            <br>
+            <br>
+            <label> Contacto: </label>
+            <input type="email" required="" id="contUsuario" name="contUsuario" class="in">
+            <br>
+            <br>
+            <br>
+            <label> Unidad academica:</label>
+            <select disabled="" id="cecyts" name="cecyts">
+            <option value="cecyt9"> CECyT No. 9 </option>
+            <option value="cecyt1"> CECyT No. 1 </option>
+            <option value="cecyt2"> CECyT No. 2 </option>
+            <option value="cecyt3"> CECyT No. 3 </option>
+            <option value="cecyt4"> CECyT No. 4 </option>
+            <option value="cecyt5"> CECyT No. 5 </option>
+            <option value="cecyt6"> CECyT No. 6 </option>
+            <option value="cecyt7"> CECyT No. 7 </option>
+            <option value="cecyt8"> CECyT No. 8 </option>
+            <option value="cecyt9"> CECyT No. 9 </option>
+            <option value="cecyt10"> CECyT No. 10 </option>
+            <option value="cecyt11"> CECyT No. 11 </option>
+            <option value="cecyt12"> CECyT No. 12 </option>
+            <option value="cecyt13"> CECyT No. 13 </option>
+            <option value="cecyt14"> CECyT No. 14 </option>
+            <option value="cecyt15"> CECyT No. 15 </option>
+            <option value="cecyt16"> CECyT No. 16 </option>
+            <option value="cecyt17"> CECyT No. 17 </option>
+            <option value="cecyt18"> CECyT No. 18 </option>
+        </select>
+            <br>
+            <br>
+            <input type="submit" value="Registrar" class="button">
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
