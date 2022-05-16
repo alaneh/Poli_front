@@ -8,7 +8,6 @@ resoluciones mayores*/
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     transition: 200ms;
     outline: none;
     border: none;
@@ -86,23 +85,32 @@ div#columna-izquierda {
     border-radius: 5px;
 }
 
-.btn:hover,
-.btn:hover>.sub {
-    color: white;
-    background-color: #74003e;
-    text-align: center;
-}
-
-.sub {
-    display: inline;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-input {
-    pointer-events: none;
-}
-
 textarea {
     width: 100%;
     resize: none;
+    pointer-events: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sub {
+    background-color: rgb(255, 255, 255);
+    color: #74003e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #74003e;
+    margin: 10px;
+    font-size: 18px;
+    pointer-events: all;
+}
+
+.sub:hover {
+    color: white;
+    background-color: #74003e;
 }

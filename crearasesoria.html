@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/paginaPrincipal.css">
     <link rel="stylesheet" href="css/modificarAsesoria.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
 </head>
 
-<body>
+<body class="cont">
     <header>
         <div class="primera seccion">
             <figure class="logo-ipn">
@@ -126,13 +127,9 @@
                         <section class="dias">Domingo<input type="time" name="diasSemana" id="">-<input type="time" name="diasSemana" id=""></section>
                     </div>
                 </div>
-                <div class="tblHorarios agrupadas">
-                    <div class="sb-columna con-borde btn">
-                        <input type="submit" value="Crear" class="sub">
-                    </div>
-                    <div class="sb-columna agrupadas con-borde btn">
-                        <input type="submit" value="Cancelar" class="sub">
-                    </div>
+                <div class="tblHorarios agrupadas flex">
+                    <input type="submit" value="Crear" class="sub">
+                    <input type="submit" value="Cancelar" class="sub">
                 </div>
             </section>
         </div>
