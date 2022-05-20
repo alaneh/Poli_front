@@ -108,8 +108,8 @@ div.filtros.active {
     visibility: visible;
     display: block;
     position: absolute;
-    top: 340%;
-    left: 30%;
+    top: 500%;
+    left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: brightness(65%);
     background: rgba(0, 0, 0, 0.76);
@@ -367,4 +367,30 @@ table {
     margin: auto;
     padding: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.btn:hover {
+    background-color: #74003e;
+    color: white;
+}
+
+select {
+    margin: 10px auto;
+    border: 1px solid #74003e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="time"] {
+    color: #74003e;
+    border: 1px solid white;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #74003e;
 }

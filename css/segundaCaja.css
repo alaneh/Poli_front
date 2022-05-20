@@ -49,12 +49,13 @@ div.columnas-asesoria {
     margin: 20px;
 }
 
-div.titulo p {
+.titulo {
     font-size: 28px;
     color: rgb(143, 68, 96);
 }
 
 .horario-asesoria {
+    font-size: 20px;
     background: rgb(116, 0, 62);
     padding: 2px 25px 2px 25px;
     border-radius: 3px;
@@ -182,4 +183,11 @@ a:-webkit-any-link {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.text{
+    font-size: 18px;
+    color:#74003e;
+}
+.flex{
+    display: flex;
 }

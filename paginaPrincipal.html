@@ -30,16 +30,26 @@
                     <section>
                         <div class="primera-columna">
                             <label><input type="radio" name="filtros" value="asesoria"> Buscar asesoría</label>
-                            <label><input type="radio" name="filtros" value="asesor"> Buscar asesor</label>
-                            <label><input type="radio" name="filtros" value="horario"> Buscar horario</label>
+                            <label><input type="radio" name="filtros" value="asesor" class="cbox"> Buscar asesor</label>
                         </div>
                         <div class="segunda-columna">
-                            <label><input type="radio" name="filtros" value="calificacion"> Buscar calificación de asesor</label>
-                            <label><input type="radio" name="filtros" value="unidadAp"> Buscar unidad de aprendizaje</label>
+                            <label>Unidad academica</label>
+                            <select name="ua" id="ua">
+                                <option value="Todos">Todos</option>
+                                <option value="cecyt 9">Cecyt 9</option>
+                            </select>
+                            <label>Dia</label>
+                            <select name="dia" id="dia">
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                            </select>
                             <div>
                                 <input type="submit" value="Ok" class="btn">
                                 <input type="reset" value="Borrar selección" class="btn">
                             </div>
+                        </div>
+                        <div>
+                            <label>Buscar horario: <input type="time" name="filtros" value="horario" class="cbox"></label>
                         </div>
                     </section>
                 </div>
